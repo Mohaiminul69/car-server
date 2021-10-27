@@ -57,6 +57,10 @@ async function run() {
 }
 run().catch(console.dir);
 
+app.get("/hello", (req, res) => {
+  res.send("Hello Updated here");
+});
+
 app.get("/", (req, res) => {
   res.send("Kaj kortese");
 });
